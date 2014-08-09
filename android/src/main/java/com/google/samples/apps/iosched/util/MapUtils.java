@@ -97,15 +97,16 @@ public class MapUtils {
     }
 
     /**
-     * Creates a marker for Moscone Center.
+     * Creates a marker for Venue Center.
      *
      * @param iconFactory Reusable IconFactory
      * @param position
      * @param c
      * @return
      */
-    public static MarkerOptions createMosconeMarker(IconGenerator iconFactory, LatLng position, Context c) {
-        final String snippet = MapFragment.TYPE_MOSCONE;
+    public static MarkerOptions createVenueMarker(IconGenerator iconFactory, LatLng position,
+            Context c) {
+        final String snippet = MapFragment.TYPE_VENUE;
         iconFactory.setStyle(IconGenerator.STYLE_DEFAULT);
 
         final BitmapDescriptor icon =
