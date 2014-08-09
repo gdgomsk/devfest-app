@@ -310,7 +310,7 @@ public class MapFragment extends com.google.android.gms.maps.MapFragment impleme
 
         if (resetCamera) {
             // Move camera directly to Moscone
-           centerOnLocationConference(false);
+           centerOnVenue(false);
         }
 
         mMap.setIndoorEnabled(false);
@@ -361,11 +361,11 @@ public class MapFragment extends com.google.android.gms.maps.MapFragment impleme
     }
 
     /**
-     * Moves the camera to Location Conference (as defined in {@link #LAT_LNG_EVENT} and {@link
+     * Moves the camera to Venue (as defined in {@link #LAT_LNG_EVENT} and {@link
      * #CAMERA_ZOOM}.
      * @param animate Animates the camera if true, otherwise it is moved
      */
-    private void centerOnLocationConference(boolean animate) {
+    private void centerOnVenue(boolean animate) {
         CameraUpdate camera = CameraUpdateFactory.newCameraPosition(
                 new CameraPosition.Builder().bearing(CAMERA_BEARING).target(LAT_LNG_EVENT_CAMERA).zoom(CAMERA_ZOOM).tilt(0f).build());
         if (animate) {
@@ -603,7 +603,7 @@ public class MapFragment extends com.google.android.gms.maps.MapFragment impleme
         if(marker.equals(mVenueMaker)){
             // Return camera to venue
             LOGD(TAG, "Clicked on venue marker, return to initial display.");
-            centerOnLocationConference(true);
+            centerOnVenue(true);
         } else if (TYPE_SESSION.equals(snippet)) {
             final long time = UIUtils.getCurrentTime(getActivity());
             Uri uri = ScheduleContract.Sessions.buildSessionsInRoomAfterUri(title, time);
