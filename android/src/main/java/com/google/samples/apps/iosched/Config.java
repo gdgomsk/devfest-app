@@ -38,6 +38,8 @@ public class Config {
     public static final boolean ENABLE_PEOPLE_I_HAVE_MET_SECTION = false;
     // Switch to enable Nearby feature
     public static final boolean ENABLE_NEARBY_FEATURE = false;
+    // Switch to enable Feedback feature
+    public static final boolean ENABLE_FEEDBACK_FEATURE = false;
 
     // Is this an internal dogfood build?
     public static final boolean IS_DOGFOOD_BUILD = false;

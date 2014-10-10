@@ -487,7 +487,7 @@ public class SessionDetailFragment extends Fragment implements
                 && currentTimeMillis <= mSessionEnd) {
             // show the "watch now" card
             showWatchNowCard();
-        } else if (!mAlreadyGaveFeedback && mInitStarred && currentTimeMillis >= (mSessionEnd -
+        } else if (Config.ENABLE_FEEDBACK_FEATURE && !mAlreadyGaveFeedback && mInitStarred && currentTimeMillis >= (mSessionEnd -
                 Config.FEEDBACK_MILLIS_BEFORE_SESSION_END)
                 && !sDismissedFeedbackCard.contains(mSessionId)) {
             // show the "give feedback" card
@@ -810,7 +810,7 @@ public class SessionDetailFragment extends Fragment implements
         }
 
         // Add session feedback link, if appropriate
-        if (!mAlreadyGaveFeedback) {
+        if (Config.ENABLE_FEEDBACK_FEATURE && !mAlreadyGaveFeedback) {
             links.add(new Pair<Integer, Object>(
                     R.string.session_feedback_submitlink,
                     getFeedbackIntent()

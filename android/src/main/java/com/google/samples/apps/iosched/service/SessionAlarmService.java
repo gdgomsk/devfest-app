@@ -35,6 +35,7 @@ import com.google.android.gms.wearable.DataApi;
 import com.google.android.gms.wearable.PutDataMapRequest;
 import com.google.android.gms.wearable.PutDataRequest;
 import com.google.android.gms.wearable.Wearable;
+import com.google.samples.apps.iosched.Config;
 import com.google.samples.apps.iosched.R;
 import com.google.samples.apps.iosched.provider.ScheduleContract;
 import com.google.samples.apps.iosched.ui.BrowseSessionsActivity;
@@ -207,40 +208,42 @@ public class SessionAlarmService extends IntentService
     public void scheduleFeedbackAlarm(final String sessionId, final long sessionEnd,
             final long alarmOffset, final String sessionTitle, String sessionRoom,
             String sessionSpeakers) {
-        // By default, feedback alarms fire 5 minutes before session end time. If alarm offset is
-        // provided, alarm is set to go off that much time from now (useful for testing).
-        long alarmTime;
-        if (alarmOffset == UNDEFINED_ALARM_OFFSET) {
-            alarmTime = sessionEnd - MILLI_FIVE_MINUTES;
-        } else {
-            alarmTime = UIUtils.getCurrentTime(this) + alarmOffset;
+        if (Config.ENABLE_FEEDBACK_FEATURE) {
+            // By default, feedback alarms fire 5 minutes before session end time. If alarm offset is
+            // provided, alarm is set to go off that much time from now (useful for testing).
+            long alarmTime;
+            if (alarmOffset == UNDEFINED_ALARM_OFFSET) {
+                alarmTime = sessionEnd - MILLI_FIVE_MINUTES;
+            } else {
+                alarmTime = UIUtils.getCurrentTime(this) + alarmOffset;
+            }
+
+            LOGD(TAG, "Scheduling session feedback alarm for session '" + sessionTitle + "'");
+            LOGD(TAG, "  -> end time: " + sessionEnd + " = " + (new Date(sessionEnd)).toString());
+            LOGD(TAG, "  -> alarm time: " + alarmTime + " = " + (new Date(alarmTime)).toString());
+            LOGD(TAG, "  -> room name: " + sessionRoom);
+            LOGD(TAG, "  -> speakers: " + sessionSpeakers);
+
+            final Intent feedbackIntent = new Intent(
+                    ACTION_NOTIFY_SESSION_FEEDBACK,
+                    null,
+                    this,
+                    SessionAlarmService.class);
+            feedbackIntent.setData(
+                    new Uri.Builder().authority("org.gdgomsk.devfest.app")
+                            .path(sessionId).build()
+            );
+            feedbackIntent.putExtra(SessionAlarmService.EXTRA_SESSION_END, sessionEnd);
+            feedbackIntent.putExtra(SessionAlarmService.EXTRA_SESSION_ALARM_OFFSET, alarmOffset);
+            feedbackIntent.putExtra(SessionAlarmService.EXTRA_SESSION_ID, sessionId);
+            feedbackIntent.putExtra(SessionAlarmService.EXTRA_SESSION_TITLE, sessionTitle);
+            feedbackIntent.putExtra(SessionAlarmService.EXTRA_SESSION_SPEAKERS, sessionSpeakers);
+            feedbackIntent.putExtra(SessionAlarmService.EXTRA_SESSION_ROOM, sessionRoom);
+            PendingIntent pi = PendingIntent.getService(
+                    this, 1, feedbackIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+            final AlarmManager am = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+            am.set(AlarmManager.RTC_WAKEUP, alarmTime, pi);
         }
-
-        LOGD(TAG, "Scheduling session feedback alarm for session '" + sessionTitle + "'");
-        LOGD(TAG, "  -> end time: " + sessionEnd + " = " + (new Date(sessionEnd)).toString());
-        LOGD(TAG, "  -> alarm time: " + alarmTime + " = " + (new Date(alarmTime)).toString());
-        LOGD(TAG, "  -> room name: " + sessionRoom);
-        LOGD(TAG, "  -> speakers: " + sessionSpeakers);
-
-        final Intent feedbackIntent = new Intent(
-                ACTION_NOTIFY_SESSION_FEEDBACK,
-                null,
-                this,
-                SessionAlarmService.class);
-        feedbackIntent.setData(
-                new Uri.Builder().authority("org.gdgomsk.devfest.app")
-                        .path(sessionId).build()
-        );
-        feedbackIntent.putExtra(SessionAlarmService.EXTRA_SESSION_END, sessionEnd);
-        feedbackIntent.putExtra(SessionAlarmService.EXTRA_SESSION_ALARM_OFFSET, alarmOffset);
-        feedbackIntent.putExtra(SessionAlarmService.EXTRA_SESSION_ID, sessionId);
-        feedbackIntent.putExtra(SessionAlarmService.EXTRA_SESSION_TITLE, sessionTitle);
-        feedbackIntent.putExtra(SessionAlarmService.EXTRA_SESSION_SPEAKERS, sessionSpeakers);
-        feedbackIntent.putExtra(SessionAlarmService.EXTRA_SESSION_ROOM, sessionRoom);
-        PendingIntent pi = PendingIntent.getService(
-                this, 1, feedbackIntent, PendingIntent.FLAG_CANCEL_CURRENT);
-        final AlarmManager am = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        am.set(AlarmManager.RTC_WAKEUP, alarmTime, pi);
     }
 
     private void scheduleAlarm(final long sessionStart,
