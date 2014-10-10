@@ -54,7 +54,7 @@
   </plurals>
 
     <!-- Shown in the 'About' window of the app. -->
-    <string name="about_body">&lt;b&gt;Конференция GDG DevFest Омск 2014&lt;/b&gt;&lt;br&gt; Версия %s&lt;br&gt;&lt;br&gt; &lt;a href=http://m.google.com/utos&gt;Условия обслуживания&lt;/a&gt;&lt;br&gt;&lt;br&gt; &lt;a href=http://www.google.com/policies/privacy/&gt;Политика конфиденциальности&lt;/a&gt;</string>
+    <string name="about_body">&lt;b&gt;GDG DevFest Omsk 2014&lt;/b&gt;&lt;br&gt; Версия %s&lt;br&gt;&lt;br&gt; &lt;a href=http://m.google.com/utos&gt;Условия обслуживания&lt;/a&gt;&lt;br&gt;&lt;br&gt; &lt;a href=http://www.google.com/policies/privacy/&gt;Политика конфиденциальности&lt;/a&gt;</string>
 
     <!-- Shown as a link in the About screen of the app; user can click to see the EULA. -->
     <string name="about_eula">Лицензионное соглашение конечного пользователя</string>
@@ -63,7 +63,7 @@
     <string name="about_licenses">Лицензии с открытым исходным кодом</string>
 
     <!-- Label on a button that the user clicks to accept a license agreement. -->
-    <string name="accept">Согласен</string>
+    <!--<string name="accept">Согласен</string>-->
 
     <!-- Label on a button that, when clicked, allows user to add an account to the device. -->
     <string name="add_account">Добавить учётную запись</string>
@@ -77,7 +77,7 @@
 
     <!-- Shown in a drop-down list on the main screen, indicating that all conference sessions
     are being displayed. -->
-    <string name="all_sessions">Все события</string>
+    <string name="all_sessions">Вся программа</string>
 
     <!-- Shown in a drop-down list on the main screen, indicating that all conference themes
     are being displayed. Themes are major categories for sessions (the themes are Design,
@@ -94,23 +94,20 @@
     <string name="all_types">Все форматы</string>
 
     <!-- Shown in a drop-down list on the Video Library screen, indicating that videos from all
-    GDG DevFest Омск years are being displayed. -->
-    <string name="all_years">Все года</string>
-
-    <!-- Name of the application, shown in the application's title bar. -->
-    <string name="app_name">GDG DevFest Омск 2014</string>
+    GDG DevFest Omsk years are being displayed. -->
+    <string name="all_years">За все время</string>
 
     <!-- Label on a button that is one possible answer to the question "Are you attending the
     conference in person in Omsk or remotely via livestream?" -->
-    <string name="attending_in_person">Лично</string>
+    <string name="attending_in_person">Да, я иду!</string>
 
     <!-- Label on a button that is one possible answer to the question "Are you attending the
     conference in person in Omsk or remotely via livestream?" -->
-    <string name="attending_remotely">Дистанционно</string>
+    <string name="attending_remotely">Нет</string>
 
-    <!-- Label on a button that allows the user to browse GDG DevFest Омск Extended events that they
+    <!-- Label on a button that allows the user to browse GDG DevFest Omsk Extended events that they
     might be interested in attending. -->
-    <string name="browse_events">Мероприятия</string>
+    <string name="browse_events">Да, узнать больше</string>
 
     <!-- Label on a button that allows the user to see what conference sessions are available
     at a particular time. -->
@@ -144,7 +141,7 @@
 
     <!-- Label on a button that the user clicks to decline something (for example, a license
     agreement). -->
-    <string name="decline">Не согласен</string>
+    <!--<string name="decline">Не согласен</string>-->
 
     <!-- Menu item that brings up the application's About screen -->
     <string name="description_about">О приложении</string>
@@ -166,10 +163,10 @@
     <!-- Menu item that allows user to configure the conference WiFi on their device. -->
     <string name="description_configure_wifi">Настройки Wi-Fi</string>
 
-    <!-- Menu item that takes the user to a page that shows a list of GDG DevFest Омск Extended events. -->
-    <string name="description_i_o_extended">GDG DevFest Омск Extended</string>
+    <!-- Menu item that takes the user to a page that shows a list of GDG DevFest Omsk Extended events. -->
+    <string name="description_i_o_extended">Сайт GDG Omsk</string>
 
-    <!-- Menu item that takes the user to the conference venue map screen -->
+    <!-- Menu item that takes the user to t1he conference venue map screen -->
     <string name="description_map">Карта</string>
 
     <!-- Menu item that allows user to turn on or turn off the output of a video to a
@@ -178,7 +175,7 @@
 
     <!-- Menu item that allows user to reload the data in the current screen so they see
     the most up-to-date version from the server. -->
-    <string name="description_refresh">Обновить</string>
+    <string name="description_refresh">Обновить программу</string>
 
     <!-- Menu item that allows the user to remove the currently session from their schedule. -->
     <string name="description_remove_schedule">Удалить из расписания</string>
@@ -227,7 +224,7 @@
     <string name="empty_widget_text">Больше нет предстоящих событий.\nУвидимся в следующем году!</string>
 
     <!-- Shown on a widget instructing user how to start using the widget. -->
-    <string name="empty_widget_text_signed_out">Чтобы зарегистрироваться и начать пользоваться приложением, нажмите на логотип GDG DevFest Омск 2014 вверху.</string>
+    <string name="empty_widget_text_signed_out">Чтобы зарегистрироваться и начать пользоваться приложением, нажмите на логотип GDG DevFest Omsk 2014 вверху.</string>
 
     <!-- Shown as a header on a list of sessions to indicate that the sessions that appear on that
     group have already ended. -->
@@ -246,8 +243,8 @@
     <string name="google_account_required_title">Необходима учетная запись Google</string>
 
     <!-- List dropdown item on the Video Library screen allowing the user to choose to see
-    the videos from a particular year of GDG DevFest Омск. -->
-    <string name="google_i_o_year">Конференция GDG DevFest Омск <xliff:g id="year">%1$d</xliff:g>
+    the videos from a particular year of GDG DevFest Omsk. -->
+    <string name="google_i_o_year">GDG DevFest Omsk <xliff:g id="year">%1$d</xliff:g>
   </string>
 
     <!-- Label on a button that the user can click to dismiss an reminder or information message.
@@ -281,7 +278,7 @@
     <string name="mandatory_update_error">Ваше приложение устарело. Чтобы продолжить использовать приложение, вам необходимо его обновить.</string>
 
     <!-- Message shown in a popup to indicate that there is a mandatory upgrade -->
-    <string name="update_available">Более новая версия данного приложения доступна в магазине Google Play.</string>
+    <string name="update_available">Новая версия данного приложения доступна в магазине Google Play.</string>
 
     <!-- Message shown in a map popup to indicate the next session.
       Param %1$s: time of the next session
@@ -301,7 +298,7 @@
     <string name="map_touch_to_see_session">Нажмите, чтобы просмотреть события</string>
 
     <!-- Text on a button that allows the user to browse more sessions -->
-    <string name="more_sessions">Ещё события</string>
+    <string name="more_sessions">Ещё</string>
 
     <!-- Accessibility description for tab that shows the attendee's schedule for a given day. -->
     <string name="my_schedule_tab_desc_a11y">Нажмите, чтобы увидеть своё расписание на <xliff:g id="day">%1$s</xliff:g>.</string>
@@ -325,16 +322,16 @@
     <string name="navdrawer_item_experts_directory_a11y">Каталог экспертов</string>
 
     <!-- Menu item to open the Explore screen [CHAR_LIMIT=20] -->
-    <string name="navdrawer_item_explore">Ознакомиться</string>
+    <string name="navdrawer_item_explore">Вся программа</string>
 
     <!-- Accessibility description for menu item to open the Explore screen. -->
-    <string name="navdrawer_item_explore_a11y">Ознакомиться с GDG DevFest Омск</string>
+    <string name="navdrawer_item_explore_a11y">Ознакомиться с GDG DevFest Omsk</string>
 
     <!-- Menu item to open the Map screen [CHAR_LIMIT=20] -->
     <string name="navdrawer_item_map">Карта</string>
 
     <!-- Menu item to open the My Schedule screen [CHAR_LIMIT=20] -->
-    <string name="navdrawer_item_my_schedule">Моё расписание</string>
+    <string name="navdrawer_item_my_schedule">Моя программа</string>
 
     <!-- Menu item to open the People I've Met screen [CHAR_LIMIT=20] -->
     <string name="navdrawer_item_people_ive_met">Мои знакомые</string>
@@ -348,20 +345,20 @@
     <!-- Menu item to start the Sign In flow [CHAR_LIMIT=20] -->
     <string name="navdrawer_item_sign_in">Войти</string>
 
-    <!-- Menu item to open a screen that lists GDG DevFest Омск related hashtags. Each hashtag, when clicked, will
+    <!-- Menu item to open a screen that lists GDG DevFest Omsk related hashtags. Each hashtag, when clicked, will
     open Google+ stream of posts that uses the hashtag [CHAR_LIMIT=20] -->
-    <string name="navdrawer_item_social">Обсуждения</string>
+    <string name="navdrawer_item_social">Новости и общение</string>
 
-    <!-- Menu item to open a list of current and past GDG DevFest Омск videos [CHAR_LIMIT=20] -->
-    <string name="navdrawer_item_video_library">Библиотека видео</string>
+    <!-- Menu item to open a list of current and past GDG DevFest Omsk videos [CHAR_LIMIT=20] -->
+    <string name="navdrawer_item_video_library">Записи докладов</string>
 
     <!-- Text indicator that appears below the user's name, showing that they are
     attending the conference in person in Omsk. -->
-    <string name="navdrawer_status_attending_in_person">Посещает GDG DevFest Омск лично</string>
+    <string name="navdrawer_status_attending_in_person">Посещает GDG DevFest Omsk лично</string>
 
     <!-- Text indicator that appears below the user's name, showing that they are
     attending the conference remotely via live streaming. -->
-    <string name="navdrawer_status_attending_remotely">Посещает GDG DevFest Омск дистанционно</string>
+    <string name="navdrawer_status_attending_remotely">Посещает GDG DevFest Omsk дистанционно</string>
 
     <!-- Message shown in a toast (popup) when the user clicks to change the active account but
     there is no network connection -->
@@ -410,8 +407,8 @@
     <string name="others">Другое</string>
 
     <!-- An application permission (this permission allows the application to modify the Google
-    GDG DevFest Омск schedule data). Shows on a permissions dialog screen. -->
-    <string name="permission_write">Изменить данные расписания GDG DevFest Омск</string>
+    GDG DevFest Omsk schedule data). Shows on a permissions dialog screen. -->
+    <string name="permission_write">Изменить данные расписания GDG DevFest Omsk</string>
 
     <!-- Description of the Google+ +1 button for accessibility screen readers -->
     <string name="plus_one_description_standard">Нажмите, чтобы добавить в свои круги.</string>
@@ -419,57 +416,57 @@
     <!-- Title in the Settings screen for the setting that enables sending of anonymous usage
     statistics to Google. This title will be accompanied by a longer description
     of the setting, so it does not need to be too verbose. [CHAR_LIMIT=40] -->
-    <string name="pref_analytics_enabled_title">Отправлять анонимную статистику использования</string>
+    <string name="pref_analytics_enabled_title">Анонимную статистика</string>
 
     <!-- Description in the Settings screen for the setting that enables sending of anonymous usage
     statistics to Google. -->
-    <string name="pref_analytics_enabled_description">Если флажок установлен, анонимная статистика использования будет отправляться в Google.</string>
+    <string name="pref_analytics_enabled_description">Если флажок установлен, анонимная статистика использования будет отправляться организаторам мероприятия.</string>
 
-    <!-- Summary in the Settings screen for the "I will be at GDG DevFest Омск" option -->
-    <string name="pref_attendee_at_venue_description">Если флажок установлен, будут показаны все события и локальные мероприятия. В противном случае, будут отображаться только транслируемые в прямом эфире события.</string>
+    <!-- Summary in the Settings screen for the "I will be at GDG DevFest Omsk" option -->
+    <string name="pref_attendee_at_venue_description">Если флажок установлен, будут показаны все события в программе мероприятия. В противном случае, будут отображаться только события, для которых будет доступна запись.</string>
 
-    <!-- Title in the Settings screen for the "I will be at GDG DevFest Омск" option -->
-    <string name="pref_attendee_at_venue_title">Я еду на GDG DevFest Омск!</string>
+    <!-- Title in the Settings screen for the "I will be at GDG DevFest Omsk" option -->
+    <string name="pref_attendee_at_venue_title">Я иду на GDG DevFest Omsk!</string>
 
     <!-- Summary in the Settings screen for the "Show local times" option -->
-    <string name="pref_local_times_description">Если флажок установлен, время событий будет соответствовать установленному на вашем устройстве местному времени. Если не установлен, будет отображаться дневное тихоокеанское время (местное время конференции).</string>
+    <string name="pref_local_times_description">Если флажок установлен, время событий будет соответствовать установленному на вашем устройстве местному времени. В противном случае, будет отображаться местное время конференции (MSK+3).</string>
 
     <!-- Title in the Settings screen for the "Show local times" option -->
-    <string name="pref_local_times_title">Показывать местное время</string>
+    <string name="pref_local_times_title">Использовать местное время</string>
 
     <!-- Summary in the Settings screen for the "Notify me to send feedback about my sessions" option -->
-    <string name="pref_notify_feedback_description">Если флажок установлен, приложение будет показывать уведомления с запросом отправить отзыв о выбранных вами событиях.</string>
+    <string name="pref_notify_feedback_description">Если флажок установлен, приложение будет показывать уведомления с запросом отправить отзыв для событий в вашей программе.</string>
 
     <!-- Title in the Settings screen for the "Notify me to send feedback about my sessions" option -->
-    <string name="pref_notify_feedback_title">Напоминать, чтобы я отправлял отзывы</string>
+    <string name="pref_notify_feedback_title">Уведомления об отзывах</string>
 
     <!-- Summary in the Settings screen for the "Notify me when my sessions are about to begin" option -->
     <string name="pref_notify_starred_sessions_description">Если флажок установлен, приложение будет показывать уведомления о скором начале ваших событий.</string>
 
     <!-- Title in the Settings screen for the "Notify me when my sessions are about to begin" option -->
-    <string name="pref_notify_starred_sessions_title">Уведомлять о моих событий</string>
+    <string name="pref_notify_starred_sessions_title">Уведомлять о моих событиях</string>
 
     <!-- Title in the Settings screen for the "Synchronize my schedule with Google Calendar" option -->
     <string name="pref_sync_with_calendar_description">Если флажок установлен, выбранные вами события будут автоматически синхронизироваться с вашим календарём Google.</string>
 
     <!-- Summary in the Settings screen for the "Synchronize my schedule with Google Calendar" option -->
-    <string name="pref_sync_with_calendar_title">Синхронизировать с календарем Google</string>
+    <string name="pref_sync_with_calendar_title">Календарь Google</string>
 
-    <!-- Text of a card shown in the session explorer that asks the user if he wants to see GDG DevFest Омск
+    <!-- Text of a card shown in the session explorer that asks the user if he wants to see GDG DevFest Omsk
     extended events in his area. "Browse events" and "No, thanks" are the buttons shown in the card -->
-    <string name="question_i_o_extended">Вы хотите узнать больше о событиях GDG DevFest Омск Extended, которые будут проходить недалеко от вас?</string>
+    <string name="question_i_o_extended">Хотите узнать больше о сообществе Google Developer Groups и мероприятиях GDG Omsk?</string>
 
-    <!-- Text of a card shown in the session explorer that asks the user if he will be attending GDG DevFest Омск
+    <!-- Text of a card shown in the session explorer that asks the user if he will be attending GDG DevFest Omsk
     in person or remotely. "Remotely" and "In person" are the buttons shown in the card -->
-    <string name="question_local_or_remote">Вы посещаете конференцию GDG DevFest Омск дистанционно или лично?</string>
+    <string name="question_local_or_remote">А вы идете на DevFest Omsk 2014?</string>
 
-    <!-- Text of a card shown in the session explorer after GDG DevFest Омск has started that asks the user if
+    <!-- Text of a card shown in the session explorer after GDG DevFest Omsk has started that asks the user if
     he wants to configure the WiFi. "Yes!" and "No, thanks" are the buttons shown in the card -->
-    <string name="question_setup_wifi_after_i_o_start">Конференция GDG DevFest Омск уже началась! Вы хотите настроить доступ к сети Wi-Fi конференции сейчас?</string>
+    <string name="question_setup_wifi_after_i_o_start">DevFest Omsk уже начался! Вы хотите настроить доступ к сети Wi-Fi конференции сейчас?</string>
 
-    <!-- Text of a card shown in the session explorer before GDG DevFest Омск has started that asks the user if
+    <!-- Text of a card shown in the session explorer before GDG DevFest Omsk has started that asks the user if
     he wants to configure the WiFi. "Yes!" and "No, thanks" are the buttons shown in the card -->
-    <string name="question_setup_wifi_before_i_o_start">Конференция GDG DevFest Омск скоро начнётся! Вы хотите настроить доступ к сети Wi-Fi конференции сейчас?</string>
+    <string name="question_setup_wifi_before_i_o_start">DevFest Omsk скоро начнётся! Вы хотите настроить доступ к сети Wi-Fi конференции сейчас?</string>
 
     <!-- Section title for videos related to a particular event session -->
     <string name="related_videos">Похожие видео</string>
@@ -496,14 +493,14 @@
   </string>
 
     <!-- Hint that the user can search across sessions -->
-    <string name="search_hint">Поиск событий</string>
+    <string name="search_hint">Поиск по программе</string>
 
     <!-- Search label that shows the type of data being searched for when the user clicks the
     Search button. -->
-    <string name="search_label">События GDG DevFest Омск</string>
+    <string name="search_label">События GDG DevFest Omsk</string>
 
     <!-- A fragment of text appended to a Google calendar event indicating it was added by this application -->
-    <string name="session_calendar_suffix">- добавлено приложением GDG DevFest Омск для Android</string>
+    <string name="session_calendar_suffix">- добавлено приложением GDG DevFest Omsk для Android</string>
 
     <!-- Accessibility text announced as a response to pressing a button to add a session to the schedule. -->
     <string name="session_details_a11y_session_added">Событие добавлено в ваше расписание</string>
@@ -604,8 +601,8 @@
     <!-- Hint for a play/pause video button -->
     <string name="session_livestream_play_pause">Старт / пауза</string>
 
-    <!-- Actionbar title for GDG DevFest Омск Live -->
-    <string name="session_livestream_title">GDG DevFest Омск Live</string>
+    <!-- Actionbar title for GDG DevFest Omsk Live -->
+    <string name="session_livestream_title">GDG DevFest Omsk Live</string>
 
     <!-- Notification text that a session is starting in some number of minutes -->
     <string name="session_notification_text_1">начнётся через <xliff:g id="remaining_time">%1$d</xliff:g> мин.</string>
@@ -635,8 +632,8 @@
     <!-- Button text indicating the user would like us to set up wifi access -->
     <string name="setup_wifi_yes">Да!</string>
 
-    <!-- Re-share template text indicating the user is watching GDG DevFest Омск Live -->
-    <string name="share_livestream_template">Просмотр GDG DevFest Омск Live: \"<xliff:g id="title">%1$s</xliff:g>\" на <xliff:g id="hashtags">%2$s</xliff:g> <xliff:g id="url">%3$s</xliff:g>
+    <!-- Re-share template text indicating the user is watching GDG DevFest Omsk Live -->
+    <string name="share_livestream_template">Просмотр GDG DevFest Omsk Live: \"<xliff:g id="title">%1$s</xliff:g>\" на <xliff:g id="hashtags">%2$s</xliff:g> <xliff:g id="url">%3$s</xliff:g>
   </string>
 
     <!-- Re-share template text indicating the user is at a particular session -->
@@ -681,13 +678,13 @@
     <string name="title_about">О приложении</string>
 
     <!-- Navigation bar text for exploring the sessions -->
-    <string name="title_explore">Ознакомиться</string>
+    <string name="title_explore">Вся программа</string>
 
     <!-- Navigation bar text for the map -->
     <string name="title_map">Карта</string>
 
     <!-- Navigation bar text for viewing the user's schedule -->
-    <string name="title_my_schedule">Моё расписание</string>
+    <string name="title_my_schedule">Моя программа</string>
 
     <!-- Navigation bar text for viewing Office Hours -->
     <string name="title_office_hours">Часы работы</string>
@@ -714,7 +711,7 @@
     <string name="title_stream">Лента</string>
 
     <!-- Label for VideoLibrary activity -->
-    <string name="title_video_library">Библиотека видео</string>
+    <string name="title_video_library">Записи докладов</string>
 
     <!-- Label for exploration category which groups session topics -->
     <string name="topics">Темы</string>
@@ -733,10 +730,10 @@
     <string name="watch_now">Смотреть сейчас!</string>
 
     <!-- Medium-length welcome text indicating the subsequent text is important legal information -->
-    <string name="welcome_text">Прежде чем мы начнём, ознакомьтесь с важной правовой информацией касательно использования данного приложения. Это займёт всего одну минуту.</string>
+    <!--<string name="welcome_text">Прежде чем мы начнём, ознакомьтесь с важной правовой информацией касательно использования данного приложения. Это займёт всего одну минуту.</string>-->
 
     <!-- Short text welcoming the user to the application -->
-    <string name="welcome_to_google_i_o_app">Добро пожаловать в приложение GDG DevFest Омск!</string>
+    <string name="welcome_to_google_i_o_app">Добро пожаловать в официальное приложение GDG DevFest Omsk 2014!</string>
 
     <!-- Text for a button which will add a wi-fi network -->
     <string name="wifi_dialog_button_configure">Добавить сеть Wi-Fi</string>
@@ -749,12 +746,12 @@
 
     <string name="experts_directory_all_cities">Все города</string>
     <string name="experts_directory_all_countries">Все страны</string>
-    <string name="experts_directory_attending">посещает GDG DevFest Омск</string>
+    <string name="experts_directory_attending">посещает GDG DevFest Omsk</string>
     <string name="experts_directory_header_body">Присвоение звания «Разработчик-эксперт Google» (GDE) является признанием выдающихся достижений разработчиков, которые обладают большим опытом работы с одной или несколькими технологиями Google и делятся им с сообществом разработчиков. GDES являются гуру, наставниками и миссионерами — они создают учебники, примеры кода, а также пишут книги и блоги, публикуют видео, выступают в качестве движущей силы проектов сообщества и присутствуют на крупных и малых мероприятиях. Эти независимые разработчики делятся с сообществами разработчиков по всему миру своим практическим опытом и знаниями, полученными в ходе работы с технологиями Google.</string>
     <string name="experts_directory_header_dismiss">Понятно</string>
     <string name="experts_directory_header_title">Кто такие разработчики-эксперты Google?</string>
-    <string name="explore_attending_in_person_toast">Посещает GDG DevFest Омск лично (вы можете изменить это в настройках)</string>
-    <string name="explore_attending_remotely_toast">Посещает GDG DevFest Омск удаленно (вы можете изменить это в настройках)</string>
+    <string name="explore_attending_in_person_toast">Посещает DevFest Omsk лично (вы можете изменить это в настройках)</string>
+    <string name="explore_attending_remotely_toast">Посещает DevFest Omsk удаленно (вы можете изменить это в настройках)</string>
     <string name="go_to_settings">Назад в настройки</string>
     <string name="map_infowindow_partner_seemore">Нажмите, чтобы увидеть больше подробностей</string>
     <string name="map_nearby_button">Поблизости</string>

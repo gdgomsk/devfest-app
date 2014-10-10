@@ -61,6 +61,7 @@
                     android:text="@string/welcome_to_google_i_o_app" />
 
                 <TextView
+                    android:id="@+id/welcome_text"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:layout_width="match_parent"
@@ -99,6 +100,7 @@
                 android:textStyle="@integer/font_textStyle_medium"
                 android:fontFamily="@string/font_fontFamily_medium"
                 android:textAllCaps="true"
+                android:visibility="gone"
                 android:id="@+id/button_decline" />
 
             <Button

@@ -19,7 +19,9 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
+import android.widget.TextView;
 
 import com.google.samples.apps.iosched.Config;
 import com.google.samples.apps.iosched.R;
@@ -31,6 +33,8 @@ public class WelcomeActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_welcome);
+
+        ((TextView) findViewById(R.id.welcome_text)).setText(Html.fromHtml(getString(R.string.welcome_text)));
 
         findViewById(R.id.button_accept).setOnClickListener(new View.OnClickListener() {
             @Override

@@ -53,7 +53,7 @@
     <string name="about_licenses">Open Source Licenses</string>
 
     <!-- Label on a button that the user clicks to accept a license agreement. -->
-    <string name="accept">Accept</string>
+    <string name="accept">Start usage!</string>
 
     <!-- Label on a button that, when clicked, allows user to add an account to the device. -->
     <string name="add_account">Add Account</string>
@@ -92,15 +92,15 @@
 
     <!-- Label on a button that is one possible answer to the question "Are you attending the
     conference in person in Omsk or remotely via livestream?" -->
-    <string name="attending_in_person">In Person</string>
+    <string name="attending_in_person">Yes, I\'m going!</string>
 
     <!-- Label on a button that is one possible answer to the question "Are you attending the
     conference in person in Omsk or remotely via livestream?" -->
-    <string name="attending_remotely">Remotely</string>
+    <string name="attending_remotely">No</string>
 
     <!-- Label on a button that allows the user to browse GDG DevFest Omsk Extended events that they
     might be interested in attending. -->
-    <string name="browse_events">Browse events</string>
+    <string name="browse_events">Yes, please!</string>
 
     <!-- Label on a button that allows the user to see what conference sessions are available
     at a particular time. -->
@@ -138,7 +138,7 @@
 
     <!-- Label on a button that the user clicks to decline something (for example, a license
     agreement). -->
-    <string name="decline">Decline</string>
+    <string name="decline">Close</string>
 
     <!-- Menu item that brings up the application's About screen -->
     <string name="description_about">About</string>
@@ -163,7 +163,7 @@
     <string name="description_debug" translatable="false">Debug and tests</string>
 
     <!-- Menu item that takes the user to a page that shows a list of GDG DevFest Omsk Extended events. -->
-    <string name="description_i_o_extended">GDG DevFest Omsk Extended</string>
+    <string name="description_i_o_extended">GDG Omsk Site</string>
 
     <!-- Menu item that takes the user to the conference venue map screen -->
     <string name="description_map">Map</string>
@@ -502,21 +502,20 @@
 
     <!-- Title in the Settings screen for the setting that enables sending of anonymous usage
     statistics to Google. -->
-    <string name="pref_analytics_enabled_title">Send anonymous usage statistics</string>
+    <string name="pref_analytics_enabled_title">Anonymous usage statistics</string>
 
     <!-- Description in the Settings screen for the setting that enables sending of anonymous usage
     statistics to Google. -->
-    <string name="pref_analytics_enabled_description">Send anonymous statistics about app usage
-    to Google.</string>
+    <string name="pref_analytics_enabled_description">Send anonymous statistics about app usage to event organizers.</string>
 
     <!-- Summary in the Settings screen for the "I will be at GDG DevFest Omsk" option -->
-    <string name="pref_attendee_at_venue_description">Display all sessions and on-site events. If unchecked, only live-streamed sessions will be shown.</string>
+    <string name="pref_attendee_at_venue_description">Display all sessions and on-site events. If unchecked, only to be recorded sessions will be shown.</string>
 
     <!-- Title in the Settings screen for the "I will be at GDG DevFest Omsk" option -->
     <string name="pref_attendee_at_venue_title">I\'ll be at GDG DevFest Omsk!</string>
 
     <!-- Summary in the Settings screen for the "Show local times" option -->
-    <string name="pref_local_times_description">Use your local time instead of the conference’s local time.</string>
+    <string name="pref_local_times_description">Use your local time instead of the conference’s local time (MSK+3).</string>
 
     <!-- Title in the Settings screen for the "Show local times" option -->
     <string name="pref_local_times_title">Show local times</string>
@@ -547,11 +546,11 @@
 
     <!-- Text of a card shown in the session explorer that asks the user if he wants to see GDG DevFest Omsk
     extended events in his area. "Browse events" and "No, thanks" are the buttons shown in the card -->
-    <string name="question_i_o_extended">Would you like to know more about GDG DevFest Omsk Extended events happening near your location?</string>
+    <string name="question_i_o_extended">Would you like to know more about Google Developer Groups community and events of GDG Omsk?</string>
 
     <!-- Text of a card shown in the session explorer that asks the user if he will be attending GDG DevFest Omsk
     in person or remotely. "Remotely" and "In person" are the buttons shown in the card -->
-    <string name="question_local_or_remote">Are you attending GDG DevFest Omsk remotely or in person in Omsk?</string>
+    <string name="question_local_or_remote">Hi there! Are you going to take part in GDG DevFest Omsk 2014 in person?</string>
 
     <!-- Text of a card shown in the session explorer after GDG DevFest Omsk has started that asks the user if
     he wants to configure the WiFi. "Yes!" and "No, thanks" are the buttons shown in the card -->
@@ -816,10 +815,16 @@
     <string name="watch_now">Watch Now!</string>
 
     <!-- Medium-length welcome text indicating the subsequent text is important legal information -->
-    <string name="welcome_text">Before we begin, here is some important legal information regarding your use of this app. This will only take a minute!</string>
+    <string name="welcome_text"><![CDATA[
+        GDG DevFest Omsk is annual large scale event for developers interested in Google’s and other open mobile and web technologies, the event takes place in Omsk and is organized by Google Developer Group Omsk.
+        <br><br>
+        GDG DevFest Omsk 2014 will be held on November 1-2 in the Omsk State University. It will be an amazing mix of conference, barcamp, ignite, and hackathon. The main topics of the event will be Wearables, Polymer and Education. More information is available at http://gdg-devfest-omsk.org.
+        <br><br>
+        This app is your personal guidebook for the event! Keep calm and have fun!]]>
+    </string>
 
     <!-- Short text welcoming the user to the application -->
-    <string name="welcome_to_google_i_o_app">Welcome to the GDG DevFest Omsk app!</string>
+    <string name="welcome_to_google_i_o_app">Welcome!</string>
 
     <!-- Text for a button which will add a wi-fi network -->
     <string name="wifi_dialog_button_configure">Add WiFi Network</string>
